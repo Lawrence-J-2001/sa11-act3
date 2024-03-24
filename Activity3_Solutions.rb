@@ -1,7 +1,7 @@
 # Problem 1
 def extract_urls(text)
-    pattern = /^http+/
-    urls = text.scan(pattern) 
+    pattern = /https?|ftp:\/\//
+    text.scan(pattern) 
 end
 
 sample_text = "Visit our site at http://www.example.org for more information. Check out our search page at
